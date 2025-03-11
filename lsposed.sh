@@ -1,10 +1,12 @@
 #!/bin/bash
 
 #Userid list, apply to app in these profiles (0 is main, 10 and 11 are work profile and another profile on my phone)
-ul="0 10 11"
+#Either specify space-delimited, or every profile as detected in /data/user
+#ul="0 10 11"
+ul=$(ls /data/user)
 
-#Whitelist in 'a','b','c' format, prevent & remove mods from this app (ex. mods on gms causes integrity to fail)
-wl="'com.google.android.gms'"
+#Whitelist in 'a','b','c' format, prevent & remove mods from this app (ex. mods on gms causes integrity to fail, and george crashes if any mod is applied)
+wl="'com.google.android.gms','at.erstebank.george'"
 
 
 db=/data/adb/lspd/config/modules_config.db
