@@ -7,6 +7,8 @@ Currently this will only enable the following modules for all packges:
 -  Disable Flag Secure 2  
 -  Hide Mock Locations  
 -  XPrivacyLua  
--  Scoop  
+-  Scoop
+
+A reboot is required for changes to take effect.
 
 -Erik Johnson - EkriirkE
